@@ -1,0 +1,56 @@
+.button {
+  height: 73px;
+  color: $light-color;
+  font-size: 28px;
+  line-height: 1;
+  background-color: $accent-color;
+  border-radius: 100px;
+  transition: background-color .2s linear;
+
+  @include hover {
+    background-color: $accent-color-hover;
+  }
+}
+
+.disabled {
+  background-color: $linear-color;
+  border-color: transparent;
+  pointer-events: none;
+}
+
+.average {
+  width: 400px;
+}
+
+.small {
+  width: 352px;
+  color: $accent-color;
+  border: thin solid $accent-color;
+  background-color: $light-color;
+  transition: color .2s linear, background-color .2s linear;
+
+  @include hover {
+    color: $light-color;
+    background-color: $accent-color-hover;
+  }
+}
+
+.big {
+  width: 444px;
+  color: $light-color;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  @media (max-width: $screen-tablet) {
+    font-weight: 600;
+  }
+}
+
+.extra-small {
+  width: 252px;
+  height: 45px;
+  color: $accent-color;
+  font-size: 18px;
+  background-color: $light-color;
+  font-weight: 600;
+}

@@ -1,0 +1,33 @@
+.section {
+  padding-top: 99px;
+  padding-bottom: 40px;
+
+  @media (max-width: $screen-tablet) {
+    padding-top: 120px;
+  }
+
+  @media (max-width: $screen-mobile) {
+    padding-top: 80px;
+  }
+}
+
+.portfolioContainer {
+  padding: 0 10px;
+
+  @media (max-width: $screen-mobile) {
+    padding: 0;
+  }
+}
+
+.title {
+  margin-bottom: 40px;
+
+  @media (max-width: $screen-tablet) {
+    padding-left: 24px;
+  }
+
+  @media (max-width: $screen-mobile) {
+    margin-bottom: 24px;
+    padding-left: 16px;
+  }
+}

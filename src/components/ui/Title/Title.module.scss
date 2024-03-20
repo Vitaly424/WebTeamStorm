@@ -1,0 +1,30 @@
+.title {
+  text-transform: uppercase;
+}
+
+.size_m {
+  font-size: clamp(2.375rem, 1.875rem + 1.04vw, 3rem);
+  line-height: 1.4;
+
+  @media (max-width: $screen-mobile) {
+    font-size: clamp(1.625rem, 0.908rem + 3.06vw, 2.375rem);
+  }
+}
+
+.size_s {
+  font-size: clamp(1.75rem, 1.05rem + 1.46vw, 2.625rem);
+  font-weight: 600;
+
+  @media (max-width: $screen-mobile) {
+    font-size: clamp(1.25rem, 0.772rem + 2.04vw, 1.75rem)
+  }
+}
+
+.size_l {
+  font-size: clamp(2.5rem, 1.5rem + 2.08vw, 3.75rem);
+  line-height: 1.4;
+
+  @media (max-width: $screen-mobile) {
+    font-size: clamp(1.625rem, 0.788rem + 3.57vw, 2.5rem)
+  }
+}

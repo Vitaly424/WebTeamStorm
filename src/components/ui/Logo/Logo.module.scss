@@ -1,0 +1,34 @@
+.logoWrapper {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: $screen-tablet) {
+    margin-right: 0;
+  }
+}
+
+.logo {
+  margin-right: 4px;
+  width: clamp(1.625rem, 0.549rem + 4.59vw, 2.75rem);
+}
+
+.title {
+  font-size: 28px;
+  color: $accent-color;
+  font-weight: 700;
+
+  @media (max-width: $screen-mobile) {
+    font-size: clamp(1.125rem, 0.527rem + 2.55vw, 1.75rem);
+  }
+}
+
+.operatingMode {
+  color: $rare-color;
+  font-size: clamp(0.5rem, 0.141rem + 1.53vw, 0.875rem);
+}
+
+.white {
+  h4, p {
+    color: $light-color;
+  }
+}

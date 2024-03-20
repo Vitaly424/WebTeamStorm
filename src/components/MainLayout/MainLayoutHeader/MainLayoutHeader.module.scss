@@ -1,0 +1,56 @@
+.header {
+  border-bottom: thin solid $linear-color;
+
+  @media (max-width: $screen-tablet) {
+    padding-top: 28px;
+    padding-bottom: 0;
+  }
+
+  @media (max-width: $screen-mobile) {
+    padding-top: 14px;
+  }
+}
+
+.headerMobile {
+  border: none;
+}
+
+.headerInner {
+  display: flex;
+  align-items: center;
+}
+
+.desktopLogo {
+  margin-right: 76px;
+}
+
+.button {
+  margin-left: auto;
+
+  @media (max-width: $screen-mobile) {
+    display: none;
+  }
+}
+
+.mobileLogo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.border {
+  margin-top: 20px;
+  border-top: 1px solid #D5CFE6;
+  border-bottom: 1px solid #D5CFE6;
+
+  @media (max-width: $screen-mobile) {
+    border: none;
+  }
+}
+
+.burger {
+  display: none;
+
+  @media (max-width: $screen-mobile) {
+    display: block;
+  }
+}

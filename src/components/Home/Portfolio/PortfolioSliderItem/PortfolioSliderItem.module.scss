@@ -1,0 +1,165 @@
+.title {
+  color: $accent-color;
+}
+
+.item {
+  display: flex;
+  column-gap: 60px;
+
+  @media (max-width: $screen-tablet) {
+    justify-content: center;
+    column-gap: 22px;
+  }
+
+  @media (max-width: $screen-mobile) {
+    flex-direction: column;
+  }
+}
+
+.content {
+  padding-top: 20px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  @media (max-width: $screen-tablet) {
+    padding: 0;
+  }
+
+  @media (max-width: $screen-mobile) {
+    padding-top: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.titleTask {
+  margin-top: 40px;
+  font-size: clamp(1.5rem, 1.1rem + 0.83vw, 2rem);
+  line-height: 1.4;
+  font-weight: 600;
+
+  @media (max-width: $screen-tablet) {
+    margin-top: 26px;
+  }
+
+  @media (max-width: $screen-mobile) {
+    font-size: clamp(1.25rem, 1.011rem + 1.02vw, 1.5rem);
+    margin-top: 16px;
+  }
+}
+
+.listTask {
+  padding-left: 36px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  @media (max-width: $screen-mobile) {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  li {
+    font-size: clamp(1.25rem, 0.95rem + 0.63vw, 1.625rem);
+    list-style: disc;
+    line-height: 1.7;
+
+    @media (max-width: $screen-mobile) {
+      font-size: clamp(1rem, 0.761rem + 1.02vw, 1.25rem);
+    }
+  }
+}
+
+.deadline {
+  font-size: clamp(1.5rem, 1.1rem + 0.83vw, 2rem);
+  margin-bottom: 40px;
+  font-weight: 600;
+
+  @media (max-width: $screen-mobile) {
+    font-size: clamp(1.25rem, 1.011rem + 1.02vw, 1.5rem);
+    margin-bottom: 26px;
+  }
+
+  span {
+    color: $accent2-color;
+    font-weight: 700;
+  }
+}
+
+.wrapperImage {
+  position: relative;
+  height: 581px;
+  max-width: 941px;
+  width: 100%;
+
+  @media (max-width: $screen-tablet) {
+    width: auto;
+  }
+
+  @media (max-width: $screen-mobile) {
+    height: 253px;
+  }
+}
+
+.wrappeqrImage {
+  position: relative;
+  height: 581px;
+  width: 941px;
+  flex-shrink: 0;
+
+  @media (max-width: $screen-tablet) {
+    height: 530px;
+    width: 360px;
+  }
+
+  @media (max-width: $screen-mobile) {
+    height: 253px;
+    width: 100%;
+  }
+}
+
+.magnifying {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+
+  @media (max-width: $screen-tablet) {
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+  }
+
+  @media (max-width: $screen-mobile) {
+    left: 16px;
+    top: 6px;
+    width: 40px;
+    height: 40px;
+  }
+
+}
+
+.imageCase {
+  max-width: 941px;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  border-radius: 20px;
+
+  @media (max-width: $screen-mobile) {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+}
+
+.btn {
+  @media (max-width: $screen-tablet) {
+    width: 352px;
+  }
+
+  @media (max-width: $screen-mobile) {
+    width: 252px;
+    height: 42px;
+    font-size: 16px;
+  }
+}

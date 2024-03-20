@@ -1,0 +1,65 @@
+.sliderController {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: $accent-color;
+  transition: background-color .2s linear;
+
+  @include hover {
+    background-color: $accent-color-hover;
+  }
+
+  @media (max-width: $screen-tablet) {
+    width: 40px;
+    height: 40px;
+  }
+
+  @media (max-width: $screen-mobile) {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+.sliderControllerPrev {
+  position: absolute;
+  z-index: $z-index1;
+  left: -12px;
+  top: 42%;
+
+  img {
+    transform: rotate(180deg);
+  }
+
+  @media (max-width: $screen-tablet) {
+    left: 12px;
+  }
+
+  @media (max-width: $screen-mobile) {
+    top: 35%;
+  }
+}
+
+.sliderControllerNext {
+  position: absolute;
+  z-index: $z-index1;
+  right: 12px;
+  top: 42%;
+
+  @media (max-width: $screen-mobile) {
+    top: 35%;
+  }
+}
+
+.swiper {
+  position: relative;
+}
+
+.isShowPrev {
+  display: none;
+}
+
+.isShowNext {
+  display: none;
+}
+
+

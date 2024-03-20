@@ -1,0 +1,98 @@
+.hero {
+  position: relative;
+  height: 996px;
+  overflow: hidden;
+  display: flex;
+  padding-left: max(24px, calc((100% - 1610px) / 2));
+  background-image: url("../../../app/assets/images/hero/decor.svg");
+  background-repeat: no-repeat;
+  background-position: calc((100% - 1610px) / 2 + 360px) 550px;
+  background-size: contain;
+
+  @media (max-width: $screen-tablet) {
+    height: 920px;
+    background-position: calc((100% - 1050px) / 2 + 419px) 488px;
+  }
+
+  @media (max-width: $screen-mobile) {
+    height: 748px;
+    background-position: calc((100% - 871px) / 2 + 386px) 414px;
+    background-size: 603px;
+  }
+}
+
+.left {
+  padding-top: 120px;
+  width: 803px;
+  margin-right: 12px;
+
+  @media (max-width: $screen-tablet) {
+    padding-top: 100px;
+  }
+
+  @media (max-width: $screen-mobile) {
+    padding-top: 100px;
+  }
+}
+
+.right {
+  position: relative;
+  width: calc(100% - 803px - 12px);
+
+  @media (max-width: $screen-tablet) {
+    width: calc(100% - 220px - 12px);
+  }
+
+  @media (max-width: $screen-mobile) {
+    width: calc(100% - 15px - 12px);
+  }
+}
+
+.imgLaptop {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.title {
+  margin-bottom: 20px;
+
+  @media (max-width: $screen-tablet) {
+    margin-bottom: 16px;
+  }
+
+  @media (max-width: $screen-mobile) {
+    margin-bottom: 12px;
+  }
+
+  span {
+    color: $accent-color;
+  }
+}
+
+.subtitle {
+  margin-bottom: 40px;
+  font-size: clamp(1.5rem, 1.1rem + 0.83vw, 2rem);
+
+  @media (max-width: $screen-tablet) {
+    margin-bottom: 24px;
+  }
+
+  @media (max-width: $screen-mobile) {
+    font-size: clamp(1rem, 0.522rem + 2.04vw, 1.5rem);
+    margin-bottom: 16px;
+  }
+}
+
+.btn {
+  @media (max-width: $screen-tablet) {
+    width: 352px;
+  }
+
+  @media (max-width: $screen-mobile) {
+    width: 252px;
+    font-size: 16px;
+    height: 42px;
+  }
+}
